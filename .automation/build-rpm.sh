@@ -8,7 +8,7 @@ $([ "$EUID" -eq 0 ] || echo /usr/bin/sudo) dnf builddep -y rpmbuild/SRPMS/*src.r
 # Perform reasonable quick build with unit tests execution
 BUILD_UT=1
 BUILD_ALL_USER_AGENTS=0
-BUILD_LOCALES=0
+BUILD_LOCALES=1
 
 # Build binary package
 rpmbuild \
